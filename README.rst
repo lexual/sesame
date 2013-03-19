@@ -30,7 +30,7 @@ Flask Bindings
 
 Then you can use the encrypt/decrypt commands via your manage script:
 
-.. code-block:: bash
+.. code-block
 
     > ./manage.py sesame
     Please provide a command:
