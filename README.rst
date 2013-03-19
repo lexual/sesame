@@ -1,10 +1,10 @@
 Sesame: config file encryption
 ==============================
 
-Almost all applications have configuration of some kind. Often this config is 
-sensitive in some way - database passwords, SMTP account details, API keys etc.
+Almost all applications have configuration of some kind, and often this config 
+is sensitive - database passwords, SMTP account details, API keys etc.
 
-These days it's common to use public source control - which means you can no
+These days it's common to use public source control; which means you can no
 longer store your application's sensitive config with your code.
 
 Sesame provides a simple way to encrypt (and decrypt) your application's config
