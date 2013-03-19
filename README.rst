@@ -18,6 +18,8 @@ Usage
 Flask Bindings
 --------------
 
+.. code-block:: python
+
     # create your Flask app and Flask-Script manager as usual
     app = Flask("test")
     manager = Manager(app)
@@ -27,6 +29,8 @@ Flask Bindings
     manager.add_command("sesame", sesame_manager)
 
 Then you can use the encrypt/decrypt commands via your manage script:
+
+.. code-block:: bash
 
     > ./manage.py sesame
     Please provide a command:
