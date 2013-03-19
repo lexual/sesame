@@ -18,6 +18,9 @@ Usage
 Flask Bindings
 --------------
 
+When using `Flask-Script <http://flask-script.readthedocs.org/en/latest/>`_ you
+benefit from automatic integration.
+
 .. code-block:: python
 
     # create your Flask app and Flask-Script manager as usual
