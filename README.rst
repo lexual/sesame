@@ -5,7 +5,7 @@ Almost all applications have configuration of some kind. Often this config is
 sensitive in some way - database passwords, SMTP account details, API keys etc.
 
 These days it's common to use public source control - which means you can no
-longer store your application's sensitive config in with its code.
+longer store your application's sensitive config with your code.
 
 Sesame provides a simple way to encrypt (and decrypt) your application's config
 so it can be safely stored in public source control.
@@ -14,7 +14,7 @@ so it can be safely stored in public source control.
 Installation
 ------------
 
-To install requests, simply:
+To install sesame, simply:
 
 .. code-block:: bash
 
