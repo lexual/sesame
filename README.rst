@@ -11,8 +11,20 @@ Sesame provides a simple way to encrypt (and decrypt) your application's config
 so it can be safely stored in public source control.
 
 
+Installation
+------------
+
+To install requests, simply:
+
+.. code-block:: bash
+
+    $ pip install sesame
+
+
 Usage
 -----
+
+
 
 
 Flask Bindings
@@ -35,7 +47,7 @@ Then sesame's encrypt/decrypt commands are available via your manage script:
 
 .. code-block::
 
-    > ./manage.py sesame
+    $ ./manage.py sesame
     Please provide a command:
     Encrypt/decrypt Flask application config
         decrypt  Decrypt a config file
