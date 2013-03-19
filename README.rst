@@ -19,7 +19,7 @@ Flask Bindings
 --------------
 
 When using `Flask-Script <http://flask-script.readthedocs.org/en/latest/>`_ you
-benefit from automatic integration.
+can benefit from (almost) automatic integration:
 
 .. code-block:: python
 
@@ -31,7 +31,7 @@ benefit from automatic integration.
     from sesame.flask.script import manager as sesame_manager
     manager.add_command("sesame", sesame_manager)
 
-Then you can use the encrypt/decrypt commands via your manage script:
+Then sesame's encrypt/decrypt commands are available via your manage script:
 
 .. code-block::
 
