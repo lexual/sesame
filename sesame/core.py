@@ -7,14 +7,25 @@ def encrypt_config(config, keyfile=None):
     """
     Encrypt a config file.
 
-    Args:
-        config (str): The path to the config file to be encrypted.
-    Kwargs:
-        keyfile (str): A previously generated encryption keyfile.
-    Returns:
-        string or None. The path to the encrypted file, or None.
-    Raises:
-       ConfigError
+    :param config: The path to the config file to be encrypted.
+    :type config: str
+    :param keyfile: A previously generated encryption keyfile.
+    :type keyfile: str
+    :raises: :class:`ConfigError`
+    :return: The path to the encrypted file, or None.
+    :rtype: string or None
+
+    Example use::
+
+        try:
+            config = encrypt_config(config, keyfile)
+            if config is not None:
+                print "Application config encrypted at {0}".format(config)
+    
+        except ConfigError as e:
+            sys.stderr.write("{0}".format(e))
+            sys.exit(1)
+
     """
     if config is None:
         raise ConfigError("You must supply the path to your config file.")
@@ -66,13 +77,13 @@ def decrypt_config(config, keyfile):
     Decrypt a config file.
 
     Args:
-        config (str): The path to the config file to be encrypted.
-        keyfile (str): The keyfile to use for decryption.
-    Kwargs:
+        * config (str): The path to the config file to be encrypted.
+        * keyfile (str): The keyfile to use for decryption.
     Returns:
         string or None. The path to the decrypted file, or None.
     Raises:
        ConfigError
+
     """
     if config is None:
         raise ConfigError(("You must supply the path to your encrypted config "
